@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     
+    <script src="jquery-3.4.1.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="Ghost.css"> 
+    <link rel="stylesheet" type="text/css" href="placeholder-loading.min.css"> 
+    <script src="GhostController.js"></script> 
+    <script src="test.js"></script>
+    <meta charset="UTF-8">
+    <title>title33</title>
+  </head>
+  <body style="background-color: grey">
+    <div>
+        <span>
+            test
+        </span>
+
+
+        <!--Table of Rooms-->
+        <div class="col-md-4 pr-3" style="height: 488px; overflow: scroll; width: 100%; background-color:white; color:#fff; border:groove; border-radius:5px;">
+                <div>
+                    <div id="tablePlaceholder" class="ph-item p-0 placeholders" style="border:none;">
+                        <div class="ph-col-12">
+                            <div class="ph-row">
+                                <div class="ph-col-12" style="height:1.8rem;"></div>
+                            </div>
+                            <div class="ph-row">
+
+                                <div class="ph-col-4"></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                            </div>
+                            <div class="ph-row">
+
+                                <div class="ph-col-4"></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                            </div>
+
+                            <div class="ph-row">
+
+                                <div class="ph-col-4"></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                            </div>
+                            <div class="ph-row">
+
+                                <div class="ph-col-4"></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                            </div>
+                            <div class="ph-row">
+
+                                <div class="ph-col-4"></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-2 "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <table border="0" class="tableActual pr-0" data-actuality="actual" cellpadding="4" cellspacing="4" style="width:100%; max-height:100%; background-color:white; color:black; ">
+                        <thead>
+                            <tr>
+
+                                <th style="background-color:lavender;">Room Name</th>
+                                <th style="background-color:lavender;">Floor Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="chart9Table"></tbody>
+                    </table>
+                </div>
+            </div>
+            <!--Table of Rooms-->
+        <br>
+
+        <br>
+
+
+        <!--Table of Rooms-->
+            <!--------------------------------------------------------------------------------------------------------------------------->
+            <div class="col-md-8 pl-md-4" style="color:#fff; border-radius:5px;">
+
+
+                    <!--Row 1.2--> <!--Average of Time for One Room-->
+                    <div class="row h-100" style="width:100%;background-color:white">
+                        <div style="width:100%;  ">
+                            <p class="pt-2" style="text-align:center; border:groove; border-radius:5px; width:100%; background-color:lavender; color:black; margin-bottom:auto; ">
+                                <b>Average of Time and Total Visitors for One Room</b>
+                                
+                            </p>
+    
+                        </div>
+    
+                        <div id="chart9Placeholder" class=" no-chart-data ph-item placeholders mb-0">
+                            <h2 class="title"></h2>
+                            <div class="y-axis"></div>
+                            <div class="x-axis"></div>
+                            <div class="bars">
+                                <div class="overlay"></div>
+                                <div class="bar bar-0"></div>
+                                <div class="bar bar-1"></div>
+                                <div class="bar bar-2"></div>
+                                <div class="bar bar-3"></div>
+                                <div class="bar bar-4"></div>
+                                <div class="bar bar-5"></div>
+                                <div class="bar bar-6"></div>
+                                <div class="bar bar-7"></div>
+                                <div class="bar bar-8"></div>
+                                <div class="bar bar-9"></div>
+                                <div class="bar bar-10"></div>
+                                <div class="bar bar-11"></div>
+                                <div class="bar bar-12"></div>
+                                <div class="bar bar-13"></div>
+                                <div class="bar bar-14"></div>
+                                <div class="bar bar-15"></div>
+                                <div class="bar bar-16"></div>
+                                <div class="bar bar-17"></div>
+                                <div class="bar bar-18"></div>
+                                <div class="bar bar-19"></div>
+                                <div class="bar bar-20"></div>
+                                <div class="bar bar-21"></div>
+                                <div class="bar bar-22"></div>
+                                <div class="bar bar-23"></div>
+                            </div>
+                        </div>
+                        <div id="anychart-embed-DHd8fH15 " data-actuality="actual" class="pt-1 anychart-embed anychart-embed-DHd8fH15 actuals chart9Actual" style="width:100%;">
+    
+                            <div id="ac_style_DHd8fH15" style="display:none;"></div>
+    
+    
+                            <div class="pb-0" id="chart9" style="border:groove; border-radius:5px; width:100%;height:100%;"></div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+<br>
+<br>
+
+
+<div class="row pl-3 pr-3 pt-5 pb-0" style="width:100%;">
+
+        <div class="col-12" style="border:groove; border-radius:5px; background-color:white;">
+            <div class="pt-2 pb-2" style="text-align:center; background-color:lavender; border-radius:5px;"><b>Average room count for each user</b></div>
+
+            
+            <div id="chart4Placeholder" class="placeholders mt-4 mb-4 ph-item">
+
+
+                <svg class="chart lineChartSvg">
+                    <!--TRANSFORM SCALE AND VIEWPORT SIZE -->
+
+                    <polyline class="lineChartPlaceholder align-self-center" fill="none"
+                              stroke="#ced4da"
+                              stroke-width="2"
+                              points="
+       00,120
+       20,60
+       40,80
+       60,20
+       80,80
+       100,80
+       120,60
+       140,100
+       160,90
+       180,80
+       200, 110
+       220, 10
+       240, 70
+       260, 100
+       280, 100
+       300, 40
+       320, 0
+       340, 100
+       360, 100
+       380, 120
+       400, 60
+       420, 70
+       440, 80
+     " />
+
+                </svg>
+
+
+            </div>
+            <div id="chart4" data-actuality="actual" class="chart4Actual" style="height: 400px; width:100%; "></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  qweqwwwwwww
+  </body>
+</html>
