@@ -2,12 +2,23 @@
 
 <html>
   <head>
-     
-    <script src="jquery-3.4.1.min.js"></script> 
+
+
+
+      <script src="jquery-3.4.1.min.js"></script>
+
+
+      <link href="css/bootstrap.css" rel="stylesheet" />
+
+      <!-- <link href="css/bootstrap-theme.css" rel="stylesheet" /> -->
+      <script src="js/bootstrap.min.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="Ghost.css"> 
     <link rel="stylesheet" type="text/css" href="placeholder-loading.min.css"> 
-    <script src="GhostController.js"></script> 
+    <script src="GhostController.js"></script>
     <script src="test.js"></script>
+      <script src="testLoaders.js.js"></script>
     <meta charset="UTF-8">
     <title>title33</title>
   </head>
@@ -19,7 +30,7 @@
 
 
         <!--Table of Rooms-->
-        <div class="col-md-4 pr-3" style="height: 488px; overflow: scroll; width: 100%; background-color:white; color:#fff; border:groove; border-radius:5px;">
+        <div class="col-md-12 pr-3" data-actuality="ghost">
                 <div>
                     <div id="tablePlaceholder" class="ph-item p-0 placeholders" style="border:none;">
                         <div class="ph-col-12">
@@ -69,19 +80,34 @@
                             </div>
                         </div>
                     </div>
-                    <table border="0" class="tableActual pr-0" data-actuality="actual" cellpadding="4" cellspacing="4" style="width:100%; max-height:100%; background-color:white; color:black; ">
-                        <thead>
-                            <tr>
 
-                                <th style="background-color:lavender;">Room Name</th>
-                                <th style="background-color:lavender;">Floor Name</th>
-                            </tr>
-                        </thead>
-                        <tbody id="chart9Table"></tbody>
-                    </table>
                 </div>
             </div>
             <!--Table of Rooms-->
+        <div class="col-12" data-actuality="actual">
+            <table class="table">
+
+                <tr style="height: 25px" class="bg-dark">
+
+                    <td   style="width: 40%;">
+
+                    </td>
+                    <td  style="width: 10%;" class="bg-light">
+
+                    </td>
+                    <td  style="width: 20%;">
+
+                    </td>
+                    <td  style="width: 10%;" class="bg-light">
+
+                    </td>
+                    <td style="width: 20%;">
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
         <br>
 
         <br>

@@ -14,4 +14,12 @@ function pageActualsInitialize(placeholders) {
         $(placeholders[i]).addClass('d-none');
     }
 }
-pageActualsInitialize($('[data-actuality="actual"]'));
+//pageActualsInitialize($('[data-actuality="actual"]'));
+
+function getActuals(){
+    return $('[data-actuality="actual"]');
+}
+
+function getGhosts() {
+    return $('[data-actuality="ghost"]');
+}
