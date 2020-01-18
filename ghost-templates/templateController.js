@@ -1,12 +1,18 @@
 import {ghostTablev1} from './ghostTable-v1.js';
 
-class templateController{
+export class templateController{
 
-
-
-static getGhostTablev1(){
+get ghostTablev1(){
     return ghostTablev1;
 };
 
 
 }
+
+export function aa(){
+    alert('123');
+}
+
+
+
+

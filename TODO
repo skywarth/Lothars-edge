@@ -6,3 +6,4 @@
 - PURGE: (dunno) jquery, to make it independent
 - TEST: Unit tests for each function
 - TRY: To employ modular approach
+- FIX: Module problem with templateController

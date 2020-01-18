@@ -1,6 +1,6 @@
 export const ghostTablev1=
     `
-<div class="col-md-12 pr-3" data-actuality="ghost">
+<div data-actuality="ghost">
     <div>
     <div id="tablePlaceholder" class="ph-item p-0 placeholders" style="border:none;">
     <div class="ph-col-12">

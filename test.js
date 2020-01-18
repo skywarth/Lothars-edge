@@ -12,7 +12,11 @@ $( document ).ready(async function() {
     if(table1Data.status){
         elementLoaded(document.getElementById("tablePlaceholder"),document.getElementById("tableActual"));
     }
+
+
+await sleep(1500);
+    /*let tempController;
+    tempController=new templateController();
+    document.getElementById("tabbb").innerHTML=tempController.ghostTablev1;*/
 });
-
-
 
