@@ -1,6 +1,7 @@
-function loadTable1(){
-sleep(1500);
-return true
+async function loadTable1(){
+await sleep(1500);
+let data=new dataPack('some data',true);
+return data;
 }
 
 

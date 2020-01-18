@@ -9,9 +9,9 @@ async function elementLoaded(placeholder, actual) {
 }
 
 
-function pageActualsInitialize(placeholders) {
-    for (var i = 0; i < placeholders.length; i++) {
-        $(placeholders[i]).addClass('d-none');
+function pageActualsInitialize(actuals/*placeholders*/) {
+    for (var i = 0; i < actuals.length; i++) {
+        $(actuals[i]).addClass('d-none');
     }
 }
 //pageActualsInitialize($('[data-actuality="actual"]'));
