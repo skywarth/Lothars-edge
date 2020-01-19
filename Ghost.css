@@ -1,4 +1,21 @@
-﻿.ghostColor {
+﻿
+.ghostLineThin{
+    height: 5px !important;
+}
+
+.ghostLineNormal{
+    height: 10px !important;
+}
+
+.ghostLineThick{
+    height: 15px !important;
+}
+
+.ghostLineThicc{
+    height: 30px !important;
+}
+
+.ghostColor {
     background-color: #ced4da;
 }
 
