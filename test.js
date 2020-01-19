@@ -1,11 +1,10 @@
+import {templateController} from './ghost-templates/templateController.js';
 
 
-
-$( document ).ready(async function() {
+$(document).ready(async function() {
     actuals=getActuals();
     ghosts=getGhosts();
     pageActualsInitialize(actuals);
-
 
 
      let table1Data=await loadTable1();
@@ -15,8 +14,6 @@ $( document ).ready(async function() {
 
 
 await sleep(1500);
-    /*let tempController;
-    tempController=new templateController();
-    document.getElementById("tabbb").innerHTML=tempController.ghostTablev1;*/
+    document.getElementById("tabbb").innerHTML=templateController.ghostBarGraphv1;
 });
 

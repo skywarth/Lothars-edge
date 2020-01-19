@@ -6,4 +6,6 @@
 - PURGE: (dunno) jquery, to make it independent
 - TEST: Unit tests for each function
 - TRY: To employ modular approach
-- FIX: Module problem with templateController
+- //FIX: Module problem with templateController
+//FIXED by changing test.js type to module.
+- TRY: parametric templates, allow passing parameters to templates

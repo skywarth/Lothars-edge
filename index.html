@@ -20,7 +20,7 @@
     <script src="GhostController.js"></script>
       <script type="module" src="ghost-templates/templateController.js"></script>
       <script src="testLoaders.js"></script>
-    <script src="test.js"></script>
+    <script type="module" src="test.js"></script>
       <!-- <script src="ghost-templates/ghostTable-v1.js"></script> -->
 
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
 
 
         <!--Table of Rooms-->
-        <div class="col-md-12 pr-3" id="tabbb" data-actuality="ghost">
+        <div class="col-md-12 p-0" id="tabbb" data-actuality="ghost">
                 <div>
                     <div id="tablePlaceholder" class="ph-item p-0 placeholders">
                         <div class="ph-col-12">
@@ -172,21 +172,10 @@
 
         <!--Table of Rooms-->
             <!--------------------------------------------------------------------------------------------------------------------------->
-            <div class="col-md-8 pl-md-4" style="color:#fff; border-radius:5px;">
+            <div class="col-md-12 p-0">
 
 
-                    <!--Row 1.2--> <!--Average of Time for One Room-->
-                    <div class="row h-100" style="width:100%;background-color:white">
-                        <div style="width:100%;  ">
-                            <p class="pt-2" style="text-align:center; border:groove; border-radius:5px; width:100%; background-color:lavender; color:black; margin-bottom:auto; ">
-                                <b>Average of Time and Total Visitors for One Room</b>
-                                
-                            </p>
-    
-                        </div>
-    
-                        <div id="chart9Placeholder" class=" no-chart-data ph-item placeholders mb-0">
-                            <h2 class="title"></h2>
+                        <div data-actuality="ghost" class=" no-chart-data ph-item">
                             <div class="y-axis"></div>
                             <div class="x-axis"></div>
                             <div class="bars">
@@ -214,33 +203,22 @@
                                 <div class="bar bar-20"></div>
                                 <div class="bar bar-21"></div>
                                 <div class="bar bar-22"></div>
-                                <div class="bar bar-23"></div>
+
                             </div>
                         </div>
-                        <div id="anychart-embed-DHd8fH15 " data-actuality="actual" class="pt-1 anychart-embed anychart-embed-DHd8fH15 actuals chart9Actual" style="width:100%;">
-    
-                            <div id="ac_style_DHd8fH15" style="display:none;"></div>
-    
-    
-                            <div class="pb-0" id="chart9" style="border:groove; border-radius:5px; width:100%;height:100%;"></div>
-    
-                        </div>
-    
-                    </div>
-    
+
                 </div>
 
 <br>
 <br>
 
 
-<div class="row pl-3 pr-3 pt-5 pb-0" style="width:100%;">
+<div class="row">
 
-        <div class="col-12" style="border:groove; border-radius:5px; background-color:white;">
-            <div class="pt-2 pb-2" style="text-align:center; background-color:lavender; border-radius:5px;"><b>Average room count for each user</b></div>
+        <div class="col-12">
 
             
-            <div id="chart4Placeholder" class="placeholders mt-4 mb-4 ph-item">
+            <div id="chart4Placeholder" class=" ph-item">
 
 
                 <svg viewBox="0 0 450 500" preserveAspectRatio="none">
@@ -278,7 +256,7 @@
 
 
             </div>
-            <div id="chart4" data-actuality="actual" class="chart4Actual" style="height: 400px; width:100%; "></div>
+
 
         </div>
     </div>
