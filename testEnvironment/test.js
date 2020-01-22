@@ -1,4 +1,4 @@
-import {templateController} from './ghost-templates/templateController.js';
+import {templateController} from '../src/ghost-templates/templateController.js';
 
 
 $(document).ready(async function() {
