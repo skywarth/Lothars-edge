@@ -8,6 +8,8 @@ import {ghostLineChartv1} from './ghostLineChartv1.js';
 //import sub templates
 import {line} from './subTemplates/straightLines.js';
 
+import {wavyLine} from './subTemplates/wavyLines.js';
+
 
 
 
@@ -36,6 +38,10 @@ export class subTemplateController{
 
     static get lines(){
     return line;
+    };
+
+    static get wavyLine(){
+        return wavyLine;
     };
 
 }

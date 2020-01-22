@@ -1,4 +1,42 @@
-﻿
+﻿.wavyLine {
+    height: 30px;
+    background: linear-gradient(45deg, transparent 18.7132568713px, #F62459 18.7132568713px, #F62459 23.7132568713px, transparent 23.7132568713px), linear-gradient(135deg, transparent 18.7132568713px, #F62459 18.7132568713px, #F62459 23.7132568713px, transparent 23.7132568713px) 30px 0;
+    background-size: 60px 30px;
+}
+/*.curlyLineContainer{
+    position: relative;
+
+    width: 200px;
+
+    height: 50px;
+    overflow: hidden;
+}
+
+.curlyLine{
+    position: absolute;
+
+    background: radial-gradient(ellipse,
+    transparent, transparent 7px, black 7px, black 10px,
+    transparent 11px);
+
+    background-size: 36px 40px;
+
+    width: 200px;
+
+    height: 20px;
+}
+
+.curlyLineUpper{
+
+}
+
+.curlyLineLower{
+    top: 20px;
+    left: 18px;
+    background-position: 0px -20px;
+}
+*/
+
 .ghostLineThin{
     height: 5px !important;
 }
