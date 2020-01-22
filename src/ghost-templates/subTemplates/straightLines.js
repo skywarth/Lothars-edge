@@ -1,4 +1,6 @@
-export const lineThin=
+
+
+const lineThin=
 
 
     `
@@ -7,7 +9,7 @@ export const lineThin=
     
     `;
 
-export const lineNormal=
+const lineNormal=
 
 
     `
@@ -16,16 +18,15 @@ export const lineNormal=
     
     `;
 
-export const lineThick=
+const lineThick=
 
 
     `
     <div class="ph-col-12 ghostLineThick"></div>
-    k
-    
+
     `;
 
-export const lineThicc=
+const lineThicc=
 
 
     `
@@ -33,3 +34,25 @@ export const lineThicc=
     
     
     `;
+
+
+export class line {
+
+
+    static get thin(){
+        return lineThin;
+    };
+
+    static get normal(){
+        return lineNormal;
+    };
+
+    static get thick(){
+        return lineThick;
+    };
+
+    static get thicc(){
+        return lineThicc;
+    };
+
+}

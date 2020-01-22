@@ -9,3 +9,5 @@
 - //FIX: Module problem with templateController
 //FIXED by changing test.js type to module.
 - TRY: parametric templates, allow passing parameters to templates
+- BUG: line templates require "ph-row" parent to be visible (has no color)
+ 

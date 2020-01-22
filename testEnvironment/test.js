@@ -1,4 +1,5 @@
 import {templateController} from '../src/ghost-templates/templateController.js';
+import {subTemplateController} from "../src/ghost-templates/templateController.js";
 
 
 $(document).ready(async function() {
@@ -14,6 +15,6 @@ $(document).ready(async function() {
 
 
 await sleep(1500);
-    document.getElementById("tabbb").innerHTML=templateController.ghostBarGraphv1;
+    document.getElementById("tabbb2").innerHTML=subTemplateController.lines.normal;
 });
 
