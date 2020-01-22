@@ -5,10 +5,19 @@ import {subTemplateController} from "../src/ghost-templates/templateController.j
 //let prom=document.getElementById("myBtn").onclick = loadTable1();
 
 
+
+document.getElementById("lineChartGhost").innerHTML=templateController.ghostLineChartv1;
+
 $(document).ready( function() {
     actuals= getActuals();
     ghosts=getGhosts();
     pageActualsInitialize(actuals);
+
+
+
+
+
+
     document.getElementById("loadBarChart").addEventListener("click", async function (){
         let ret= await loadTable1();
         if(ret.status){
@@ -17,6 +26,21 @@ $(document).ready( function() {
 
 
     });
+
+    document.getElementById("loadLineChart").addEventListener("click", async function (){
+        let ret= await loadTable1();
+        if(ret.status){
+            elementLoaded(document.getElementById("lineChartGhost"),document.getElementById("lineChartActual"));
+        }
+
+
+    });
+
+
+
+
+
+
 
     /*let table1Data=await loadTable1();
     if(table1Data.status){

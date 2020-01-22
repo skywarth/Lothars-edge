@@ -1,8 +1,9 @@
 ### TODO's
 
 - ADD: function for generating various ghost sub-templates
-//Append child
+//TEMP-DONE
 - ADD: function for generating various ghost templates/items
+//TEMP-DONE
 - PURGE: (dunno) jquery, to make it independent
 - TEST: Unit tests for each function
 - TRY: To employ modular approach
