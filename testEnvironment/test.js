@@ -2,19 +2,32 @@ import {templateController} from '../src/ghost-templates/templateController.js';
 import {subTemplateController} from "../src/ghost-templates/templateController.js";
 
 
-$(document).ready(async function() {
-    actuals=getActuals();
+//let prom=document.getElementById("myBtn").onclick = loadTable1();
+
+
+$(document).ready( function() {
+    actuals= getActuals();
     ghosts=getGhosts();
     pageActualsInitialize(actuals);
+    document.getElementById("loadBarChart").addEventListener("click", async function (){
+        let ret= await loadTable1();
+        if(ret.status){
+            elementLoaded(document.getElementById("barChartGhost"),document.getElementById("barChartActual"));
+        }
 
 
-     let table1Data=await loadTable1();
+    });
+
+    /*let table1Data=await loadTable1();
     if(table1Data.status){
         elementLoaded(document.getElementById("tablePlaceholder"),document.getElementById("tableActual"));
-    }
+    }*/
 
 
-await sleep(1500);
-    document.getElementById("tabbb2").innerHTML=subTemplateController.lines.normal;
+    //document.getElementById("tabbb2").innerHTML=subTemplateController.wavyLine;
+
+
+
+
 });
 

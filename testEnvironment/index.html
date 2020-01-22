@@ -8,10 +8,10 @@
       <script src="jquery-3.4.1.min.js"></script>
 
 
-      <link href="css/bootstrap.css" rel="stylesheet" />
+      <link href="resc/bootstrap/css/bootstrap.css" rel="stylesheet" />
 
       <!-- <link href="css/bootstrap-theme.css" rel="stylesheet" /> -->
-      <script src="js/bootstrap.min.js"></script>
+      <script src="resc/bootstrap/js/bootstrap.min.js"></script>
 
 
     <link rel="stylesheet" type="text/css" href="../src/Ghost.css">
@@ -23,269 +23,68 @@
     <script type="module" src="test.js"></script>
       <!-- <script src="ghost-templates/ghostTable-v1.js"></script> -->
 
+
+      <!-- DEMO CHARTS -->
+      <link rel="stylesheet" href="resc/css/demoBarChart.css">
+
     <meta charset="UTF-8">
     <title>title33</title>
+
   </head>
   <body style="background-color: grey">
-    <div>
-        <span>
-            test
-        </span>
-
-        <div class="ph-item" >
-<div class="wavyLine"></div>
-            <div class="ph-col-12 p-0">
-                <div class="ph-row" id="tabbb2">
+  <div id="barChartGhost" class="col-12 p-0 no-chart-data ph-item" data-actuality="ghost">
 
 
-                </div>
-            </div>
-        </div>
+      <div class="y-axis"></div>
+      <div class="x-axis"></div>
+      <div class="bars">
+          <div class="overlay"></div>
+          <div class="bar bar-0"></div>
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+          <div class="bar bar-4"></div>
+          <div class="bar bar-5"></div>
+          <div class="bar bar-6"></div>
+          <div class="bar bar-7"></div>
+          <div class="bar bar-8"></div>
+          <div class="bar bar-9"></div>
+          <div class="bar bar-10"></div>
+          <div class="bar bar-11"></div>
+          <div class="bar bar-12"></div>
+          <div class="bar bar-13"></div>
+          <div class="bar bar-14"></div>
+          <div class="bar bar-15"></div>
+          <div class="bar bar-16"></div>
+          <div class="bar bar-17"></div>
+          <div class="bar bar-18"></div>
+          <div class="bar bar-19"></div>
+          <div class="bar bar-20"></div>
+          <div class="bar bar-21"></div>
+          <div class="bar bar-22"></div>
 
-        <!--Table of Rooms-->
-        <div class="col-md-12 p-0" id="tabbb" data-actuality="ghost">
-                <div>
-                    <div id="tablePlaceholder" class="ph-item p-0 placeholders">
-                        <div class="ph-col-12">
-                            <div class="ph-row">
+      </div>
 
-                            </div>
-                            <div class="ph-row">
+  </div>
+  <button id="loadBarChart">Load Bar Chart</button>
+<div id="barChartActual" data-actuality="actual">
+    <h1>Bar Chart HTML</h1>
 
-                                <div class="ph-col-4"></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                            </div>
-                            <div class="ph-row">
+    <div class="chart-wrap vertical">
+        <h2 class="title">Bar Chart HTML Example:  Using Only HTML And CSS</h2>
 
-                                <div class="ph-col-4"></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                            </div>
-
-                            <div class="ph-row">
-
-                                <div class="ph-col-4"></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                            </div>
-                            <div class="ph-row">
-
-                                <div class="ph-col-4"></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                            </div>
-                            <div class="ph-row">
-
-                                <div class="ph-col-4"></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                                <div class="ph-col-2 empty"></div>
-                                <div class="ph-col-2 "></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!--Table of Rooms-->
-        <div id="tableActual" class="col-12" data-actuality="actual">
-            <table class="table" style="border-collapse: separate;border-spacing: 0px 15px;">
-
-                <tr style="height: 25px" class="bg-dark">
-
-                    <td   style="width: 40%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td  style="width: 20%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td style="width: 20%;">
-
-                    </td>
-                </tr>
-                <tr style="height: 25px" class="bg-dark">
-
-                    <td   style="width: 40%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td  style="width: 20%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td style="width: 20%;">
-
-                    </td>
-                </tr>
-                <tr style="height: 25px" class="bg-dark mb-2">
-
-                    <td   style="width: 40%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td  style="width: 20%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td style="width: 20%;">
-
-                    </td>
-                </tr>
-                <tr style="height: 25px" class="bg-dark">
-
-                    <td   style="width: 40%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td  style="width: 20%;">
-
-                    </td>
-                    <td  style="width: 10%;" class="bg-light">
-
-                    </td>
-                    <td style="width: 20%;">
-
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <br>
-
-        <br>
-
-
-        <!--Table of Rooms-->
-            <!--------------------------------------------------------------------------------------------------------------------------->
-            <div class="col-md-12 p-0">
-
-
-                        <div data-actuality="ghost" class=" no-chart-data ph-item">
-                            <div class="y-axis"></div>
-                            <div class="x-axis"></div>
-                            <div class="bars">
-                                <div class="overlay"></div>
-                                <div class="bar bar-0"></div>
-                                <div class="bar bar-1"></div>
-                                <div class="bar bar-2"></div>
-                                <div class="bar bar-3"></div>
-                                <div class="bar bar-4"></div>
-                                <div class="bar bar-5"></div>
-                                <div class="bar bar-6"></div>
-                                <div class="bar bar-7"></div>
-                                <div class="bar bar-8"></div>
-                                <div class="bar bar-9"></div>
-                                <div class="bar bar-10"></div>
-                                <div class="bar bar-11"></div>
-                                <div class="bar bar-12"></div>
-                                <div class="bar bar-13"></div>
-                                <div class="bar bar-14"></div>
-                                <div class="bar bar-15"></div>
-                                <div class="bar bar-16"></div>
-                                <div class="bar bar-17"></div>
-                                <div class="bar bar-18"></div>
-                                <div class="bar bar-19"></div>
-                                <div class="bar bar-20"></div>
-                                <div class="bar bar-21"></div>
-                                <div class="bar bar-22"></div>
-
-                            </div>
-                        </div>
-
-                </div>
-
-<br>
-<br>
-
-
-<div class="row">
-
-        <div class="col-12">
-
-            
-            <div id="chart4Placeholder" class=" ph-item">
-
-
-                <svg viewBox="0 0 450 500" preserveAspectRatio="none">
-
-                    <polyline fill="none"
-                              stroke="#ced4da"
-                              stroke-width="2"
-                              points="
-           00,120
-           20,60
-           40,80
-           60,20
-           80,80
-           100,80
-           120,60
-           140,100
-           160,90
-           180,80
-           200, 110
-           220, 10
-           240, 70
-           260, 100
-           280, 100
-           300, 40
-           320, 0
-           340, 100
-           360, 100
-           380, 120
-           400, 60
-           420, 70
-           440, 80
-         " />
-
-                </svg>
-
-
-            </div>
-
-
+        <div class="grid">
+            <div class="bar" style="--bar-value:85%;" data-name="Your Blog" title="Your Blog 85%"></div>
+            <div class="bar" style="--bar-value:23%;" data-name="Medium" title="Medium 23%"></div>
+            <div class="bar" style="--bar-value:7%;" data-name="Tumblr" title="Tumblr 7%"></div>
+            <div class="bar" style="--bar-value:38%;" data-name="Facebook" title="Facebook 38%"></div>
+            <div class="bar" style="--bar-value:35%;" data-name="YouTube" title="YouTube 35%"></div>
+            <div class="bar" style="--bar-value:30%;" data-name="LinkedIn" title="LinkedIn 30%"></div>
+            <div class="bar" style="--bar-value:5%;" data-name="Twitter" title="Twitter 5%"></div>
+            <div class="bar" style="--bar-value:20%;" data-name="Other" title="Other 20%"></div>
         </div>
     </div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-  qweqwwwwwww
   </body>
 </html>
