@@ -33,7 +33,9 @@
 
   </head>
   <body style="background-color: grey">
-  <div id="barChartGhost" class="col-12 p-0 no-chart-data ph-item" data-actuality="ghost">
+  <div class="row">
+  <div class="col-4">
+  <div id="barChartGhost" class="p-0 no-chart-data ph-item" data-actuality="ghost">
 
 
       <div class="y-axis"></div>
@@ -67,12 +69,61 @@
       </div>
 
   </div>
-  <button id="loadBarChart">Load Bar Chart</button>
+      <button id="loadBarChart">Load Bar Chart</button>
+      <br>
+  </div>
+
+
+  <div class="col-5" >
+      <div id="tableGhost">
+
+      </div>
+      <div id="tableActual" data-actuality="actual">
+      <table style="width: 80%;">
+          <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+          </tr>
+          <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+          </tr>
+          <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+          </tr>
+          <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+          </tr>
+          <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+          </tr>
+          <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+          </tr>
+          <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+          </tr>
+      </table>
+      </div>
+      <button id="loadTable">Load Bar Chart</button>
+  </div>
+
+
 <div id="barChartActual" data-actuality="actual">
-    <h1>Bar Chart HTML</h1>
 
     <div class="chart-wrap vertical">
-        <h2 class="title">Bar Chart HTML Example:  Using Only HTML And CSS</h2>
 
         <div class="grid">
             <div class="bar" style="--bar-value:85%;" data-name="Your Blog" title="Your Blog 85%"></div>
@@ -86,9 +137,10 @@
         </div>
     </div>
 </div>
+  </div>
 
-
-
+  <div class="row">
+<div class="col-6">
 <div id="lineChartGhost">
 
 </div>
@@ -129,6 +181,9 @@
           />
 
       </svg>
+
+  </div>
+</div>
   </div>
 
   </body>

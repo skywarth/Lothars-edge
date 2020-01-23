@@ -7,6 +7,7 @@ import {subTemplateController} from "../src/ghost-templates/templateController.j
 
 
 document.getElementById("lineChartGhost").innerHTML=templateController.ghostLineChartv1;
+document.getElementById("tableGhost").innerHTML=templateController.ghostTablev1;
 
 $(document).ready( function() {
     actuals= getActuals();
@@ -31,6 +32,15 @@ $(document).ready( function() {
         let ret= await loadTable1();
         if(ret.status){
             elementLoaded(document.getElementById("lineChartGhost"),document.getElementById("lineChartActual"));
+        }
+
+
+    });
+
+    document.getElementById("loadTable").addEventListener("click", async function (){
+        let ret= await loadTable1();
+        if(ret.status){
+            elementLoaded(document.getElementById("tableGhost"),document.getElementById("tableActual"));
         }
 
 
