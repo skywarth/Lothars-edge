@@ -41,18 +41,18 @@ export class line {
 
     static get thin(){
         return lineThin;
-    };
-
+    }
+//deleted semicolons
     static get normal(){
         return lineNormal;
-    };
+    }
 
     static get thick(){
         return lineThick;
-    };
+    }
 
     static get thicc(){
         return lineThicc;
-    };
+    }
 
 }

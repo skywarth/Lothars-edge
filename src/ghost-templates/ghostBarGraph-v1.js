@@ -32,4 +32,4 @@ export const ghostBarGraphv1=
 
                             </div>
 
-                </div>`
+                </div>`;

@@ -46,4 +46,4 @@ export const ghostLineChartv1=
         </div>
     
     
-    `
+    `;
